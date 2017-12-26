@@ -8,7 +8,7 @@ title.innerHTML = "Which 'The Big Bang Theory' Character Are You?";
 var img1 = document.createElement('img');
 quiz.appendChild(img1);
 img1.setAttribute("id", "img1");
-img1.setAttribute("src", "thebigbangtheory.jpg");
+img1.setAttribute("src", "images/thebigbangtheory.jpg");
 img1.setAttribute("alt", "the big bang theory logo");
 var question = document.createElement('div');
 quiz.appendChild(question);
@@ -35,7 +35,7 @@ var questionIndex = 0;
 
 function firstQuestion(){  
 	qNumber.innerHTML = "First question";
-	img1.src ='Color.jpg';
+	img1.src ='images/Color.jpg';
 	img1.alt ='Colors';
 	queston.innerHTML = "Pick a color:";
     answers.innerHTML = "<input type='radio' name='options' id='Q-1-A-1' value='Blue' style='margin:20px'>Blue<input type='radio' name='options' id='Q-1-A-2' value='Red' style='margin:20px'>Red<input type='radio' name='options' id='Q-1-A-3' value='Green' style='margin:20px'>Green<input type='radio' name='options' id='Q-1-A-4' value='Pink' style='margin:20px'>Pink<input type='radio' name='options' id='Q-1-A-5' value='Yellow' style='margin:20px'>Yellow<input type='radio' name='options' id='Q-1-A-6' value='Orange' style='margin:20px'>orange";
@@ -47,7 +47,7 @@ function firstQuestion(){
 		
 function secondQuestion(){ 
 	qNumber.innerHTML = "Second question";
-	img1.src ='movie.jpg';
+	img1.src ='images/movie.jpg';
 	img1.alt ='movies';
 	queston.innerHTML = "What's your favorite movie?";
     answers.innerHTML = "<textarea id='question2' maxlength='30' placeholder='please write up to 30 words' rows='4' cols='50'></textarea>";
@@ -59,7 +59,7 @@ function secondQuestion(){
 
 function thirdQuestion(){ 
 	qNumber.innerHTML = "Third question";
-	img1.src ='SEASONS.png';
+	img1.src ='images/SEASONS.png';
 	img1.alt ='seasons of the year';
 	queston.innerHTML = "Which is your favorite season?";
     answers.innerHTML = "<input type='checkbox' id='Q-3-A-1' value='Winter' style='margin:20px'>Winter<input type='checkbox' id='Q-3-A-2' value='Spring' style='margin:20px'>Spring<input type='checkbox' id='Q-3-A-3' value='Summer' style='margin:20px'>Summer<input type='checkbox' id='Q-3-A-4' value='Autumn' style='margin:20px'>Autumn";
@@ -71,7 +71,7 @@ function thirdQuestion(){
 
 function forthQuestion(){
 	qNumber.innerHTML = "Forth question";
-	img1.src = 'friday-night.jpg';
+	img1.src = 'images/friday-night.jpg';
 	img1.alt ='friday night poster';
 	queston.innerHTML = "On a Friday night, you can be found?";
     answers.innerHTML = "<select><option id='Q-4-A-1' value='At a family dinner'>At a family dinner</option><option id='Q-4-A-2' value='Out with friends'>Out with friends</option><option id='Q-4-A-3' value='Playing board games'>Playing board games</option><option id='Q-4-A-4' value='Sleeping'>Sleeping</option></select>";
@@ -83,7 +83,7 @@ function forthQuestion(){
 
 function fifthQuestion(){
 	qNumber.innerHTML = "Fifth question";
-	img1.src ='super power.jpg';
+	img1.src ='images/super power.jpg';
 	img1.alt ='super power';
 	queston.innerHTML = "Which Power would you prefer?";
     answers.innerHTML = "<span style='margin:20px'>Super strength</span><input type='range' id='solutions' min='1' max='10' class='slider' style='margin:20px'><span style='margin:20px'>The ability to fly</span>";
@@ -117,7 +117,7 @@ function lastQuestion(questionIndex){
     points = check(questionIndex);
     if ((points>=7) && (points<=10)){
 		qNumber.innerHTML = "You are: Raj!";
-	    img1.src ='raj.jpg';
+	    img1.src ='images/raj.jpg';
 	    img1.alt ='raj img';
 	    queston.style = 'display: none';
 	    answers.style = 'display: none';
@@ -125,7 +125,7 @@ function lastQuestion(questionIndex){
     }
 	else if ((points>10) && (points<=13)){
 	   	qNumber.innerHTML = "You are: Amy!";
-	    img1.src ='Amy_farrah_fowler.jpg';
+	    img1.src ='images/Amy_farrah_fowler.jpg';
 	    img1.alt ='Amy img';
 	    queston.style = 'display: none';
 	    answers.style = 'display: none';
@@ -133,7 +133,7 @@ function lastQuestion(questionIndex){
 	}
 	else if ((points>13) && (points<=16)){
 	 	qNumber.innerHTML = "You are: Howard!";
-	    img1.src ='howard.jpg';
+	    img1.src ='images/howard.jpg';
 	    img1.alt ='Howard img';
 	    queston.style = 'display: none';
 	    answers.style = 'display: none';
@@ -141,7 +141,7 @@ function lastQuestion(questionIndex){
 	}
 	else if ((points>16) && (points<=19)){
 		qNumber.innerHTML = "You are: Leonard!";
-	    img1.src ='leonard.jpg';
+	    img1.src ='images/leonard.jpg';
 	    img1.alt ='leonard img';
 	    queston.style = 'display: none';
 	    answers.style = 'display: none';
@@ -149,7 +149,7 @@ function lastQuestion(questionIndex){
 	}
 	else if ((points>19) && (points<=22)){
 		qNumber.innerHTML = "You are: Penny!";
-	    img1.src ='Penny.jpg';
+	    img1.src ='images/Penny.jpg';
 	    img1.alt ='penny img';
 	    queston.style = 'display: none';
 	    answers.style = 'display: none';
@@ -157,7 +157,7 @@ function lastQuestion(questionIndex){
 	}
 	else if ((points>22) && (points<=26)){
 		qNumber.innerHTML = "You are: Sheldon!";
-	    img1.src ='shaldon.jpg';
+	    img1.src ='images/shaldon.jpg';
 	    img1.alt ='shaldon img';
 	    queston.style = 'display: none';
 	    answers.style = 'display: none';
